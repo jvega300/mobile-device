@@ -1,0 +1,36 @@
+@import "~bootstrap/scss/bootstrap";
+
+.breadcrums_list {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+    margin: 0;
+    list-style: none;
+    font-size: 0.8em;
+    border: solid 1px rgba(0, 0, 0, 0.125);
+
+
+    li {
+        color: $dark;
+        margin:  0 0 0 5px;
+        
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+        
+        a {
+            color: $dark;
+        }
+
+        &.last {
+            
+            &::before {
+                content: '›';
+                padding:0 5px 0 0;
+
+            }
+        }
+    }
+ 
+}
