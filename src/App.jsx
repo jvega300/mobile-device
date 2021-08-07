@@ -2,7 +2,11 @@
 import React from "react";
 import { withRouter, Route, Switch } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
+import { useDispatch } from "react-redux";
 
+
+// Containers
+import HomeContainer from "./containers/home/home.container";
 
 // Routes
 import {
@@ -13,11 +17,14 @@ import {
 
 import './App.scss';
 
+import * as tp from "./action-types";
 
 
 function App() {
 
+  const dispatch = useDispatch();
 
+  dispatch({ type: tp.LOAD_PRODUCTS });
 
 
   
@@ -35,8 +42,8 @@ function App() {
           <Col sm={12}>
             <div className="content">
               <Switch>
-                <Route path={ROUTE_HOME} exact />
-                <Route path={ROUTE_DETAIL}  />
+              <Route path={ROUTE_HOME} exact component={HomeContainer} />
+              <Route path={ROUTE_DETAIL}  />
               </Switch>
             </div>
           </Col>
