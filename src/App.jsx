@@ -14,6 +14,7 @@ import {
   ROUTE_DETAIL
 } from "./constants/routes";
 
+import Header from "./components/header/header"
 
 import './App.scss';
 
@@ -34,7 +35,7 @@ function App() {
       <Container className="App">
         <Row>
           <Col sm={12}>
-            Header
+            <Header />
           </Col>
         </Row>
        
