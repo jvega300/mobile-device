@@ -44,7 +44,7 @@ const HomeContainer = () => {
 
           )}
           {allProductData && allProductData.map((value, index) => (
-            <Col key={index} xs={12} md={3} sm={6} className="mb-2">
+            <Col key={index} lg={3} xs={12} md={3} sm={6} className="mb-2">
               <ProductCard  data={value} />
             </Col>
 
