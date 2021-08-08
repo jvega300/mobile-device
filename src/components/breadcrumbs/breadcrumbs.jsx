@@ -6,6 +6,10 @@ import { Link, useLocation } from "react-router-dom";
 // CSS
 import "./breadcrumbs.scss";
 
+import { useSelector } from "react-redux";
+
+// Selectors
+import { selectedProduct } from "../../store/selectors";
 
 // Routes
 import {
@@ -18,7 +22,7 @@ import { ReactComponent as HomeIcon } from "../../assets/icons/home.svg";
 export default () => {
 
   let location = useLocation();
-  const detailName = "demo"
+  const detailName = useSelector(selectedProduct);
 
   return (    
       <ul className="breadcrums_list">
