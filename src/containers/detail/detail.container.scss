@@ -1,0 +1,48 @@
+@import "~bootstrap/scss/bootstrap";
+
+.imgDetail {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    @include media-breakpoint-down(sm) {
+        margin: 0 0 1em 0;
+    }
+}
+
+.detailWindow {
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 0 5px 0;
+
+                    
+        .name {
+            font-weight: 600;
+            padding: 0 10px 0 0;
+        }
+        .detail {
+            display: inline-block;
+            position: relative;
+        }
+    }
+
+    
+}
+.select{
+    font-size: .8em ;
+    margin: 0 0 2em 0;
+
+    > div {
+        margin: 0 0 5px 0;
+    }
+
+    label{ text-transform: capitalize; font-weight: 600;}
+
+}
+
