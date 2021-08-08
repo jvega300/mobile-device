@@ -7,6 +7,7 @@ import { useDispatch } from "react-redux";
 
 // Containers
 import HomeContainer from "./containers/home/home.container";
+import DetailContainer from "./containers/detail/detail.container";
 
 
 // Component
@@ -85,7 +86,7 @@ function App() {
             <div className="content">
               <Switch>
                 <Route path={ROUTE_HOME} exact component={HomeContainer} />
-                <Route path={ROUTE_DETAIL} />
+                <Route path={ROUTE_DETAIL} component={DetailContainer} />
               </Switch>
             </div>
           </Col>

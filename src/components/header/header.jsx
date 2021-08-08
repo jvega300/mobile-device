@@ -1,10 +1,14 @@
 /* eslint-disable import/no-anonymous-default-export */
 // Modules
 import React from "react";
+import { useSelector } from "react-redux";
 
 
 // bootstrap
 import { Row,Col, Container } from "react-bootstrap";
+
+// Selectors
+import { getCartCountSelector } from "../../store/selectors";
 
 
 import Breadcrumbs from "../../components/breadcrumbs/breadcrumbs";
@@ -22,6 +26,8 @@ import { ROUTE_HOME } from "../../constants/routes";
 
 // Component
 export default () => {
+
+  const cartCount = useSelector(getCartCountSelector);
   
   
 
@@ -38,7 +44,7 @@ export default () => {
         </Col>
         <Col sm={4} className="cart">
 
-          <Cart width="24px" /> 0 Products
+          <Cart width="24px" /> {cartCount ? cartCount : 0} Products
         </Col>
       </Row>
       <Row>
