@@ -47,8 +47,3 @@ export function* watchLoadProducts() {
 export function* watchSelectProductDetail() {
   yield takeEvery(tp.SELECTED_PRODUCT, getSelectProductDetail);
 }
-
-// // Watchers
-// export function* watchLoadProducts() {
-//   yield takeEvery(tp.LOAD_PRODUCTS, get);
-// }

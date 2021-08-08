@@ -22,28 +22,6 @@ export default (state = [], action = {}) => {
         ...state,
         data: null,
       };
-
-
-    // case types.RESET_JOURNEY:
-    //   return [];
-    // case types.ADD_TO_BASKET:
-    //   isThere = state.find(product => {
-    //     return product.familyName === action.product.familyName;
-    //   });
-    //   if (isThere) state.splice(state.indexOf(isThere), 1);
-    //   return [...state, action.product];
-
-    // case types.DELETE_FROM_BASKET:
-    //   action.selectedProducts.splice(action.position, 1);
-
-    //   if (action.selectedProducts.length < 1) {
-    //     return [];
-    //   } else {
-    //     return [action.selectedProducts[0]];
-    //   }
-
-    // case types.EMPTY_BASKET:
-    //   return [];
       
     default:
       return state;
