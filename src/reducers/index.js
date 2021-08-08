@@ -2,10 +2,12 @@
 
 // Reducers
 import products from "./products";
-
+import searchProduct from "./search";
 
 
 // Export
 export default {
-  products
+  products,
+  searchProduct
 };
+

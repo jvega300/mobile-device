@@ -9,10 +9,14 @@ import { Row, Col, Container, Spinner } from "react-bootstrap";
 
 // Selectors
 import { 
-  productSelector } from "../../store/selectors";
+  productSelector,
+  searchSelector
+ } from "../../store/selectors";
 
 // Components
 import ProductCard from "../../components/card/card"
+
+import Search from "../../components/search/search"
 
 // CSS
 import "./home.container.scss";
@@ -21,20 +25,28 @@ import "./home.container.scss";
 const HomeContainer = () => {
 
   const allProductData = useSelector(productSelector);
+  const productData = useSelector(searchSelector);
 
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     setIsLoading(false)
-    console.info(allProductData)
-
-  }, [allProductData])
+  }, [productData])
 
 
   return (
     <Container>
 
-    
+      <Row>
+        <Col sm={12}> 
+        {allProductData && productData && (
+          <Search totalNumber={allProductData.length} searchNumber={productData.length} />
+
+        )}
+        </Col>
+
+      </Row>
+
       <Row lg={6}>
           {isLoading && (
             // <span>Loading</span>
@@ -43,7 +55,7 @@ const HomeContainer = () => {
             </div>
 
           )}
-          {allProductData && allProductData.map((value, index) => (
+          {!isLoading && productData && productData.map((value, index) => (
             <Col key={index} lg={3} xs={12} md={3} sm={6} className="mb-2">
               <ProductCard  data={value} />
             </Col>
