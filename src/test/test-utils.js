@@ -4,7 +4,6 @@ import { createMemoryHistory } from "history";
 import { createStore, compose, applyMiddleware, combineReducers } from "redux";
 import { Provider } from "react-redux";
 import { render, configure } from "@testing-library/react";
-import { Router } from "react-router";
 import {
   routerMiddleware,
   connectRouter,
@@ -29,22 +28,6 @@ const createRootReducer = history =>
 
 configure({ testIdAttribute: "data-test-id" });
 const sagaMiddleware = createSagaMiddleware();
-
-export const renderWithRouter = (
-  ui,
-  {
-    route = "/",
-    history = createMemoryHistory({ initialEntries: [route] })
-  } = {}
-) => {
-  return {
-    ...render(<Router history={history}>{ui}</Router>),
-    // adding `history` to the returned utilities to allow us
-    // to reference it in our tests (just try to avoid using
-    // this to test implementation details).
-    history
-  };
-};
 
 export const renderWithRouteAndRedux = (ui, initialState = {}, urls = "/") => {
   const history = createMemoryHistory({ initialEntries: [urls] });

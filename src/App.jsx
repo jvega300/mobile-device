@@ -64,7 +64,7 @@ function App() {
       dateString = savedTimestamp.timestamp,
       now = new Date().getTime().toString();
       
-      if(Math.abs((dateString - now)/1000/60) > 1) {
+      if(Math.abs((dateString - now)/1000/60) > 60) {
         setShowModal(true)
       }
     }
