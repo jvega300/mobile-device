@@ -21,3 +21,4 @@ export const CLEAR_SAVE_SEARCH_TERM = "CLEAR_SAVE_SEARCH_TERM"
 // Related to Shopping Cart
 export const ADD_TO_CART = "ADD_TO_CART"
 export const UPDATE_CART = "UPDATE_CART"
+export const EMPYT_CART = "EMPYT_CART"
