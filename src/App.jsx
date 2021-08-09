@@ -37,11 +37,12 @@ function App() {
   };
 
   const handleModalClose = () => {
-    console.info("Click Modal")
     localStorage.setItem("timestamp", JSON.stringify(objectTimestamp));
     selectProduct()
     history.push(ROUTE_HOME);
     setShowModal(false)
+    dispatch({ type: tp.EMPYT_CART });
+
 
   } 
 
@@ -63,7 +64,7 @@ function App() {
       dateString = savedTimestamp.timestamp,
       now = new Date().getTime().toString();
       
-      if(Math.abs((dateString - now)/1000/60) > 60) {
+      if(Math.abs((dateString - now)/1000/60) > 1) {
         setShowModal(true)
       }
     }

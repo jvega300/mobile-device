@@ -17,6 +17,11 @@ export default (state = [], action = {}) => {
         cartCount: action.payload.count,
       };
 
+      case types.EMPYT_CART:
+      return {
+        data: []
+      };
+
     default:
       return state;
   }
