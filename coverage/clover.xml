@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1628495895863" clover="3.2.0">
-  <project timestamp="1628495895863" name="All files">
-    <metrics statements="129" coveredstatements="95" conditionals="51" coveredconditionals="36" methods="35" coveredmethods="28" elements="215" coveredelements="159" complexity="0" loc="129" ncloc="129" packages="8" files="11" classes="11"/>
+<coverage generated="1628583704464" clover="3.2.0">
+  <project timestamp="1628583704464" name="All files">
+    <metrics statements="160" coveredstatements="115" conditionals="87" coveredconditionals="49" methods="52" coveredmethods="43" elements="299" coveredelements="207" complexity="0" loc="160" ncloc="160" packages="14" files="22" classes="22"/>
     <package name="src">
       <metrics statements="23" coveredstatements="13" conditionals="4" coveredconditionals="1" methods="4" coveredmethods="3"/>
-      <file name="App.jsx" path="/Users/koko/Desarrollo/indi/mobile-device/src/App.jsx">
+      <file name="App.jsx" path="/Users/jorge/Desarrollo/mobile-device/src/App.jsx">
         <metrics statements="23" coveredstatements="13" conditionals="4" coveredconditionals="1" methods="4" coveredmethods="3"/>
         <line num="31" count="1" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
@@ -31,28 +31,18 @@
         <line num="74" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="src.action-types">
-      <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.js" path="/Users/koko/Desarrollo/indi/mobile-device/src/action-types/index.js">
-        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="6" count="7" type="stmt"/>
-        <line num="9" count="7" type="stmt"/>
-        <line num="10" count="7" type="stmt"/>
-        <line num="11" count="7" type="stmt"/>
-        <line num="14" count="7" type="stmt"/>
-        <line num="15" count="7" type="stmt"/>
-        <line num="16" count="7" type="stmt"/>
-        <line num="17" count="7" type="stmt"/>
-        <line num="22" count="7" type="stmt"/>
-        <line num="23" count="7" type="stmt"/>
-        <line num="24" count="7" type="stmt"/>
+    <package name="src.components.breadcrumbs">
+      <metrics statements="3" coveredstatements="3" conditionals="5" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="breadcrumbs.jsx" path="/Users/jorge/Desarrollo/mobile-device/src/components/breadcrumbs/breadcrumbs.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="5" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.components.card">
       <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
-      <file name="card.jsx" path="/Users/koko/Desarrollo/indi/mobile-device/src/components/card/card.jsx">
+      <file name="card.jsx" path="/Users/jorge/Desarrollo/mobile-device/src/components/card/card.jsx">
         <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
         <line num="26" count="3" type="stmt"/>
         <line num="28" count="3" type="stmt"/>
@@ -66,18 +56,59 @@
         <line num="43" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="src.components.header">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="header.jsx" path="/Users/jorge/Desarrollo/mobile-device/src/components/header/header.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.modal">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="modal.jsx" path="/Users/jorge/Desarrollo/mobile-device/src/components/modal/modal.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.search">
+      <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <file name="search.jsx" path="/Users/jorge/Desarrollo/mobile-device/src/components/search/search.jsx">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+      </file>
+    </package>
     <package name="src.components.select">
       <metrics statements="3" coveredstatements="3" conditionals="9" coveredconditionals="7" methods="2" coveredmethods="2"/>
-      <file name="select.jsx" path="/Users/koko/Desarrollo/indi/mobile-device/src/components/select/select.jsx">
+      <file name="select.jsx" path="/Users/jorge/Desarrollo/mobile-device/src/components/select/select.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="9" coveredconditionals="7" methods="2" coveredmethods="2"/>
         <line num="12" count="15" type="stmt"/>
         <line num="14" count="15" type="stmt"/>
         <line num="27" count="16" type="stmt"/>
       </file>
     </package>
+    <package name="src.constants">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="api.js" path="/Users/jorge/Desarrollo/mobile-device/src/constants/api.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="8" type="stmt"/>
+        <line num="6" count="8" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+      </file>
+      <file name="routes.js" path="/Users/jorge/Desarrollo/mobile-device/src/constants/routes.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+      </file>
+    </package>
     <package name="src.containers.detail">
       <metrics statements="35" coveredstatements="32" conditionals="24" coveredconditionals="18" methods="10" coveredmethods="9"/>
-      <file name="detail.container.jsx" path="/Users/koko/Desarrollo/indi/mobile-device/src/containers/detail/detail.container.jsx">
+      <file name="detail.container.jsx" path="/Users/jorge/Desarrollo/mobile-device/src/containers/detail/detail.container.jsx">
         <metrics statements="35" coveredstatements="32" conditionals="24" coveredconditionals="18" methods="10" coveredmethods="9"/>
         <line num="23" count="2" type="stmt"/>
         <line num="30" count="2" type="stmt"/>
@@ -118,7 +149,7 @@
     </package>
     <package name="src.containers.home">
       <metrics statements="8" coveredstatements="7" conditionals="8" coveredconditionals="6" methods="3" coveredmethods="2"/>
-      <file name="home.container.jsx" path="/Users/koko/Desarrollo/indi/mobile-device/src/containers/home/home.container.jsx">
+      <file name="home.container.jsx" path="/Users/jorge/Desarrollo/mobile-device/src/containers/home/home.container.jsx">
         <metrics statements="8" coveredstatements="7" conditionals="8" coveredconditionals="6" methods="3" coveredmethods="2"/>
         <line num="25" count="2" type="stmt"/>
         <line num="27" count="4" type="stmt"/>
@@ -130,24 +161,57 @@
         <line num="59" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.sagas">
-      <metrics statements="28" coveredstatements="8" conditionals="2" coveredconditionals="0" methods="10" coveredmethods="6"/>
-      <file name="cart.saga.js" path="/Users/koko/Desarrollo/indi/mobile-device/src/sagas/cart.saga.js">
-        <metrics statements="6" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+    <package name="src.reducers">
+      <metrics statements="18" coveredstatements="9" conditionals="22" coveredconditionals="9" methods="4" coveredmethods="4"/>
+      <file name="cart.js" path="/Users/jorge/Desarrollo/mobile-device/src/reducers/cart.js">
+        <metrics statements="5" coveredstatements="2" conditionals="6" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="6" count="57" type="cond" truecount="1" falsecount="3"/>
+        <line num="9" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="26" count="57" type="stmt"/>
+      </file>
+      <file name="products.js" path="/Users/jorge/Desarrollo/mobile-device/src/reducers/products.js">
+        <metrics statements="4" coveredstatements="3" conditionals="5" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="6" count="57" type="cond" truecount="2" falsecount="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="15" count="56" type="stmt"/>
+      </file>
+      <file name="search.js" path="/Users/jorge/Desarrollo/mobile-device/src/reducers/search.js">
+        <metrics statements="4" coveredstatements="2" conditionals="5" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="6" count="57" type="cond" truecount="1" falsecount="2"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="26" count="57" type="stmt"/>
+      </file>
+      <file name="selected-product.js" path="/Users/jorge/Desarrollo/mobile-device/src/reducers/selected-product.js">
+        <metrics statements="5" coveredstatements="2" conditionals="6" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="6" count="57" type="cond" truecount="1" falsecount="3"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="27" count="57" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.sagas">
+      <metrics statements="28" coveredstatements="11" conditionals="2" coveredconditionals="0" methods="10" coveredmethods="7"/>
+      <file name="cart.saga.js" path="/Users/jorge/Desarrollo/mobile-device/src/sagas/cart.saga.js">
+        <metrics statements="6" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
-        <line num="32" count="16" type="stmt"/>
+        <line num="32" count="17" type="stmt"/>
       </file>
-      <file name="index.saga.js" path="/Users/koko/Desarrollo/indi/mobile-device/src/sagas/index.saga.js">
+      <file name="index.saga.js" path="/Users/jorge/Desarrollo/mobile-device/src/sagas/index.saga.js">
         <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="9" count="15" type="stmt"/>
         <line num="10" count="15" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
       </file>
-      <file name="product.saga.js" path="/Users/koko/Desarrollo/indi/mobile-device/src/sagas/product.saga.js">
+      <file name="product.saga.js" path="/Users/jorge/Desarrollo/mobile-device/src/sagas/product.saga.js">
         <metrics statements="12" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
@@ -162,7 +226,7 @@
         <line num="44" count="16" type="stmt"/>
         <line num="48" count="16" type="stmt"/>
       </file>
-      <file name="search.saga.js" path="/Users/koko/Desarrollo/indi/mobile-device/src/sagas/search.saga.js">
+      <file name="search.saga.js" path="/Users/jorge/Desarrollo/mobile-device/src/sagas/search.saga.js">
         <metrics statements="7" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="1"/>
         <line num="12" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
@@ -173,19 +237,37 @@
         <line num="27" count="16" type="stmt"/>
       </file>
     </package>
-    <package name="src.test">
-      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-      <file name="test-utils.js" path="/Users/koko/Desarrollo/indi/mobile-device/src/test/test-utils.js">
-        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="23" count="6" type="stmt"/>
-        <line num="24" count="14" type="stmt"/>
-        <line num="29" count="6" type="stmt"/>
-        <line num="30" count="6" type="stmt"/>
-        <line num="32" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="33" count="14" type="stmt"/>
-        <line num="35" count="14" type="stmt"/>
-        <line num="40" count="14" type="stmt"/>
-        <line num="41" count="14" type="stmt"/>
+    <package name="src.service">
+      <metrics statements="12" coveredstatements="7" conditionals="5" coveredconditionals="1" methods="4" coveredmethods="2"/>
+      <file name="api.js" path="/Users/jorge/Desarrollo/mobile-device/src/service/api.js">
+        <metrics statements="7" coveredstatements="4" conditionals="1" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="5" count="8" type="cond" truecount="0" falsecount="1"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="8" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+      <file name="methods.js" path="/Users/jorge/Desarrollo/mobile-device/src/service/methods.js">
+        <metrics statements="5" coveredstatements="3" conditionals="4" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.store">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
+      <file name="selectors.js" path="/Users/jorge/Desarrollo/mobile-device/src/store/selectors.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
+        <line num="1" count="8" type="stmt"/>
+        <line num="2" count="8" type="stmt"/>
+        <line num="3" count="8" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="6" count="8" type="stmt"/>
       </file>
     </package>
   </project>
