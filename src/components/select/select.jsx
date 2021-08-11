@@ -7,7 +7,12 @@ import React from "react";
 import "./select.scss";
 
 // Component
-export default ({options= [], label= "", onChangeSelect}) => {
+export default ({
+  options= [], 
+  label= "", 
+  onChangeSelect,
+  optionText = "Select an option"
+}) => {
 
   const testname = "select-test-id-"+label;
 
@@ -20,7 +25,7 @@ export default ({options= [], label= "", onChangeSelect}) => {
           
 
           {options && options.length > 1 && (
-              <option id="-1" value="-1">Select an option</option>
+              <option id="-1" value="-1">{optionText}</option>
           )}
           
           {options && options.map((value, index) => (

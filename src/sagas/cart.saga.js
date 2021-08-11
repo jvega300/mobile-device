@@ -18,10 +18,7 @@ export function* addToCart() {
     const response = yield call(postToCart, cartValue);
 
     yield put({ type: tp.UPDATE_CART, payload: response.data });
-
-
-    // const filteredSearchArray = allProducts.filter(value => value.brand.toLowerCase().includes(data.payload.toLowerCase()) || value.model.toLowerCase().includes(data.payload.toLowerCase()))
-    // yield put({ type: tp.SAVE_SEARCH_PRODUCTS, payload: filteredSearchArray });
+    
   } catch (error) {
     console.error('error on cart saga')
   }

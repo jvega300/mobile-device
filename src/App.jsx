@@ -22,6 +22,8 @@ import {
 
 import * as tp from "./action-types";
 
+import * as CONSTANTS from "./constants/constants";
+
 import './App.scss';
 
 
@@ -37,7 +39,7 @@ function App() {
   };
 
   const handleModalClose = () => {
-    localStorage.setItem("timestamp", JSON.stringify(objectTimestamp));
+    localStorage.setItem(CONSTANTS.TIMESTAMP, JSON.stringify(objectTimestamp));
     selectProduct()
     history.push(ROUTE_HOME);
     setShowModal(false)
@@ -48,19 +50,19 @@ function App() {
 
 
   const objectTimestamp = {value: "value", timestamp: new Date().getTime()}
-  const actualTimeStamp = localStorage.getItem("timestamp")
+  const actualTimeStamp = localStorage.getItem(CONSTANTS.TIMESTAMP)
 
   
   useEffect(() => {
 
     if(!actualTimeStamp) {
       
-      localStorage.setItem("timestamp", JSON.stringify(objectTimestamp));
+      localStorage.setItem(CONSTANTS.TIMESTAMP, JSON.stringify(objectTimestamp));
       selectProduct()
 
     } else {
       
-      const savedTimestamp = JSON.parse(localStorage.getItem("timestamp")),
+      const savedTimestamp = JSON.parse(localStorage.getItem(CONSTANTS.TIMESTAMP)),
       dateString = savedTimestamp.timestamp,
       now = new Date().getTime().toString();
       
