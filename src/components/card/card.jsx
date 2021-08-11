@@ -21,11 +21,14 @@ import * as tp from "../../action-types";
 
 
 
-export default ({ data }) => {
+export default ({ 
+  data, 
+  textLabel = "Details",
+  notAvailable = "Not available"
+ }) => {
 
   const dispatch = useDispatch();
 
-  const textLabel = "Details";
 
   const clickHandler = (id) => {
     dispatch(push(`${ROUTE_DETAIL}/${id}`));
@@ -35,7 +38,7 @@ export default ({ data }) => {
 
 
   const checkPriceValue = (price) => {
-    return price !== "" ? `${price}€` : "Not available";
+    return price !== "" ? `${price}€` : notAvailable;
   }
 
   return (

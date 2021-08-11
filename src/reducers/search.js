@@ -16,11 +16,7 @@ export default (state = [], action = {}) => {
         ...state,
         term: action.payload,
       };
-      // case types.CLEAR_SAVE_SEARCH_TERM:
-      //   return {
-      //     ...state,
-      //     term: null,
-      //   };
+     
       
     default:
       return state;

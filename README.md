@@ -14,10 +14,9 @@ Every 60 min data will be reloaded. User will have an alert messge.
 
 User can searh for products. This search is stored so, if page is reloaded, search pattern willl be applied for new render. This action is developed for home -> detail -> home navigation rutine.
 
-For now, if user wants to clear search term, text must be deleted from search input. A Clear button would be a solution.
+For now, if user wants to clear search term, text must be deleted from search input. A Clear button would be a soluction.
 
-If price is not informed, there is no action to add product to cart on detail view, so product can´t be added to basket. Message will be shown. 
-Card component will show a "Not Available" text as well if price is not informed.
+If price is not informed, there is no action for add to cart on detail viwe, so product can´t be added to basket. Card component will show a "Not Available" as well.
 
 React Bootstrap is used for Layout.
 

@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">83.33% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>4/12</span>
+                <span class='fraction'>10/12</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">83.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>4/12</span>
+                <span class='fraction'>10/12</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -120,11 +120,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -135,24 +135,24 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">16x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Modules
 import { call, put, takeEvery } from "redux-saga/effects";
 &nbsp;
@@ -170,9 +170,9 @@ import {
 export function* getAllProducts() {
   try {
     const response = yield call(getProductList)
-<span class="cstat-no" title="statement not covered" >    yield put({ type: tp.LOAD_PRODUCTS_SUCCESS, payload:response.data });</span>
-<span class="cstat-no" title="statement not covered" >    yield put({ type: tp.SAVE_SEARCH_PRODUCTS, payload:response.data });</span>
-<span class="cstat-no" title="statement not covered" >    yield put({ type: tp.SAVE_SEARCH_TERM, payload: null });</span>
+    yield put({ type: tp.LOAD_PRODUCTS_SUCCESS, payload:response.data });
+    yield put({ type: tp.SAVE_SEARCH_PRODUCTS, payload:response.data });
+    yield put({ type: tp.SAVE_SEARCH_TERM, payload: null });
 &nbsp;
     
     
@@ -182,11 +182,11 @@ export function* getAllProducts() {
 }
 &nbsp;
 &nbsp;
-export function* <span class="fstat-no" title="function not covered" >getSelectProductDetail(</span>{payload}) {
-<span class="cstat-no" title="statement not covered" >  try {</span>
+export function* getSelectProductDetail({payload}) {
+  try {
 &nbsp;
-    const response = <span class="cstat-no" title="statement not covered" >yield call(getSelectedProduct, payload)</span>
-<span class="cstat-no" title="statement not covered" >    yield put({ type: tp.SELECTED_PRODUCT_LOAD_SUCCESS, payload:response.data });</span>
+    const response = yield call(getSelectedProduct, payload)
+    yield put({ type: tp.SELECTED_PRODUCT_LOAD_SUCCESS, payload:response.data });
     
   } catch (error) {
 <span class="cstat-no" title="statement not covered" >    console.error('error on product saga', error)</span>
@@ -208,7 +208,7 @@ export function* watchSelectProductDetail() {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Aug 10 2021 10:32:20 GMT+0200 (hora de verano de Europa central)
+                at Thu Aug 12 2021 01:00:53 GMT+0200 (hora de verano de Europa central)
             </div>
         </div>
         <script src="../../prettify.js"></script>
