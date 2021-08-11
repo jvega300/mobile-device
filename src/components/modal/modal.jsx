@@ -9,7 +9,13 @@ import { Modal, Button } from "react-bootstrap";
 
 
 // Component
-export default ({state, handleModalClose}) => {
+export default ({
+  state, 
+  handleModalClose,
+  title = "Information for user",
+  msg = "Your session has expired. Data will be reloaded.",
+  ok = "Ok"
+}) => {
 
   return (    
     <>
@@ -20,15 +26,15 @@ export default ({state, handleModalClose}) => {
       centered
       >
       <Modal.Header>
-        <Modal.Title>Information for user</Modal.Title>
+        <Modal.Title>{title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        Your session has expired. Data will be reloaded.
+        {msg}
       </Modal.Body>
       <Modal.Footer>
         
         <Button variant="primary" onClick={handleModalClose}>
-          Ok
+          {ok}
         </Button>
       </Modal.Footer>
     </Modal>

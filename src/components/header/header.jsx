@@ -23,9 +23,11 @@ import { Link } from "react-router-dom";
 
 import { ROUTE_HOME } from "../../constants/routes";
 
-
 // Component
-export default () => {
+export default ({
+  title = "Mobile Shop",
+  products = "Products"
+}) => {
 
   const cartCount = useSelector(getCartCountSelector);
   
@@ -38,13 +40,13 @@ export default () => {
           <div className="aligned">
             <Link to={ROUTE_HOME}>
               <Logo width="48px" />
-              <h1>Mobile Shop</h1>
+              <h1>{title}</h1>
             </Link>
           </div>
         </Col>
         <Col sm={4} className="cart">
 
-          <Cart width="24px" /> {cartCount ? cartCount : 0} Products
+          <Cart width="24px" /> {cartCount ? cartCount : 0} {products}
         </Col>
       </Row>
       <Row>

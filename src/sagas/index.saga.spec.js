@@ -22,4 +22,16 @@ describe("Global watcher", () => {
       ])
     );
   });
+
+  it("Should return error", () => {
+    const error = 'error on cart saga';
+    const generator = rootSaga();
+
+    generator.next();
+    expect(
+      generator.throw(error).value).
+      toEqual(
+        console.log("ERROR SAGAS MAIN", error)
+      );
+  });
 });

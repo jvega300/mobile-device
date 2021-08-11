@@ -5,6 +5,8 @@ import { useSelector, useDispatch } from "react-redux";
 
 // Constants
 import * as tp from "../../action-types";
+import * as CONSTANTS from "../../constants/constants";
+
 
 // Selectors
 import { selectedProduct } from "../../store/selectors";
@@ -60,7 +62,7 @@ const DetailContainer = () => {
 
     // if colors, key of object is colorCode
     // if storage, key of object is colorCode
-    const codeTransformation = e.target.id === 'colors' ? 'colorCode' : 'storageCode';
+    const codeTransformation = e.target.id === CONSTANTS.COLORS ? CONSTANTS.COLORCODE : CONSTANTS.STORAGECODE;
 
     // If first option is -1 ('Select...') set to nullotherwise set number value
     const checkedValue = e.target.selectedOptions[0].id !== "-1" ? Number(e.target.selectedOptions[0].id) : null;
@@ -83,7 +85,7 @@ const DetailContainer = () => {
         if (Object.hasOwnProperty.call(data.options, key)) {
           // const element = object[key];
           if(data.options[key].length === 1) {
-            const codeTransformation = key === 'colors' ? 'colorCode' : 'storageCode';
+            const codeTransformation = key === CONSTANTS.COLORS ? CONSTANTS.COLORCODE  : CONSTANTS.STORAGECODE ;
             doUpdate(codeTransformation, data.options[key][0]['code'])
           }
         }
@@ -210,13 +212,13 @@ const DetailContainer = () => {
                   disabled={isButtonDisabled}
                   data-test-id="button-test-id"
                 >
-                  Comprar
+                  {CONSTANTS.BUY}
                 </Button>
                 )}
 
                 {!productData.price && (
                   <Alert variant="danger">
-                    Product Not Available, because there is no price.
+                    {CONSTANTS.PNA}
                   </Alert>
               
                 )}

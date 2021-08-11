@@ -18,6 +18,8 @@ import {
 
 import { ReactComponent as HomeIcon } from "../../assets/icons/home.svg";
 
+import * as CONSTANTS from "../../constants/constants";
+
 // Component
 export default () => {
 
@@ -27,12 +29,12 @@ export default () => {
   return (    
       <ul className="breadcrums_list">
         { location.pathname === ROUTE_HOME && (
-            <li><HomeIcon  width="24px"  /> Home</li>
+            <li><HomeIcon  width="24px"  /> {CONSTANTS.HOME}</li>
             )}
 
         { detailName && location.pathname !== ROUTE_HOME && (
           <>
-            <li><HomeIcon  width="16px" height="16px" /> <Link to={ROUTE_HOME}>Home</Link></li>
+            <li><HomeIcon  width="16px" height="16px" /> <Link to={ROUTE_HOME}>{CONSTANTS.HOME}</Link></li>
             <li className="last">{detailName.model}</li>
           </>
         )}
