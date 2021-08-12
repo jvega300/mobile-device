@@ -1,5 +1,8 @@
-# mobile-device
+# Mobile-device
 React project with Store and Sagas
+
+# Online deployment
+Project is deployed on GitHub Pages: https://jvega300.github.io/mobile-device
 
 
 # Developer Notes
@@ -8,7 +11,7 @@ This app is created with Create React App. Show commands to start, test, build b
 
 The application architecture comprises 1 page, 2 containers, and shared components. 
 
-State management of the applications aworks under redux and sagas for side effects.
+State management of the applications works under redux and sagas for side effects.
 
 Every 60 min data will be reloaded. User will have an alert messge.
 
