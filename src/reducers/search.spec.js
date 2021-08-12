@@ -1,11 +1,9 @@
 /* eslint-disable import/no-anonymous-default-export */
 import * as tp from "../action-types";
 
-// SAVE_SEARCH_PRODUCTS
-// SAVE_SEARCH_TERM
 
 // Reducer
-import SearchReducer, { initialState } from "./search";
+import SearchReducer from "./search";
 
 // Defaults
 const defaultState = {
@@ -25,35 +23,7 @@ describe("Tests for search reducer", () => {
   });
 
   describe("Tests all types with correct return", () => {
-    /*it("SAVE_SEARCH_PRODUCTS", () => {
-      const type = tp.SAVE_SEARCH_PRODUCTS;
-      const b = {
-          data: "value"
-      }
     
-      const result = SearchReducer({type, b});
-
-      //console.log(result)
-
-      const expectedResult = { type: 'SAVE_SEARCH_PRODUCTS', b: { data: 'value' } }
-      expect(result).toEqual(expectedResult);
-    });
-
-    it("SAVE_SEARCH_TERM", () => {
-        const type = tp.SAVE_SEARCH_TERM;
-        const b = {
-            data: "value"
-        }
-      
-        const result = SearchReducer({type, b});
-  
-        console.log(result)
-  
-        const expectedResult = { type: 'SAVE_SEARCH_TERM', b: { data: 'value' } }
-        expect(result).toEqual(expectedResult);
-      });
-
-      */
       it("SAVE_SEARCH_PRODUCTS", () => {
 
         const type = tp.SAVE_SEARCH_PRODUCTS;
