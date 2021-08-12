@@ -29,8 +29,8 @@ describe("Global watcher", () => {
 
     generator.next();
     expect(
-      generator.throw(error).value).
-      toEqual(
+      generator.throw(error).value)
+      .toEqual(
         console.log("ERROR SAGAS MAIN", error)
       );
   });

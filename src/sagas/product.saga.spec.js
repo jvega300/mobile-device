@@ -1,4 +1,4 @@
-import { takeEvery, select, call, put } from "redux-saga/effects";
+import { takeEvery, call, put } from "redux-saga/effects";
 import {
   watchLoadProducts,
   watchSelectProductDetail,

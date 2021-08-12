@@ -49,8 +49,8 @@ describe("Cart Suite", () => {
     const gen = addToCart();
     gen.next();
     expect(
-      gen.throw(error).value).
-      toEqual(
+      gen.throw(error).value)
+      .toEqual(
         console.error(error)
       );
     });

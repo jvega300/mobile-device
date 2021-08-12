@@ -1,12 +1,8 @@
 /* eslint-disable import/no-anonymous-default-export */
 import * as tp from "../action-types";
 
-// SELECTED_PRODUCT
-// SELECTED_PRODUCT_LOAD_SUCCESS
-// CLEAR_SELECTED_PRODUCT
-
 // Reducer
-import SelectedProductReducer, { initialState } from "./selected-product";
+import SelectedProductReducer from "./selected-product";
 
 // Defaults
 const defaultState = {

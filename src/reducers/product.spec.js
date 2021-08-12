@@ -1,17 +1,8 @@
 /* eslint-disable import/no-anonymous-default-export */
 import * as tp from "../action-types";
 
-// ADD_TO_CART
-// UPDATE_CART
-// EMPYT_CART
-
 // Reducer
-import ProductsReducer, { state, action } from "./products";
-
-// Defaults
-const defaultState = {
-  value: 0
-};
+import ProductsReducer from "./products";
 
 
 
